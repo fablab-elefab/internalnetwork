@@ -33,8 +33,16 @@ var svgPaths = {
     path: '#192-168-1-27 > path',
     cssProp: 'stroke'
   },
+    '192.168.1.28': {
+    path: '#192-168-1-28 > path',
+    cssProp: 'fill'
+  },
     '192.168.1.30': {
     path: '#192-168-1-30 > path',
+    cssProp: 'fill'
+  },
+    '192.168.1.31': {
+    path: '#192-168-1-31 > path',
     cssProp: 'stroke'
   },
     '192.168.1.64': {
