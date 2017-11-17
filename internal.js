@@ -74,7 +74,14 @@ var svgPaths = {
         $(svgProps.path).css(svgProps.cssProp, 'green');
       });
       var finishedSummary = $(xml).find("finished")[0].attributes['summary'].value;
-      $('#additionalInfos').text(finishedSummary);
+      finishedSummary = finishedSummary.split(';')[1].trim() + "<ul>";
+      $(xml).find('host').each(function() {
+        var ipAddr = $(this).find("address[addrtype='ipv4']");
+	if (ipAddr && ipAddr[0].attributes)
+            finishedSummary += "<li>" + ipAddr[0].attributes['addr'].value + "</li>";
+      });
+      finishedSummary += "</ul>";
+      $('#additionalInfos').append(finishedSummary);
     }
   });
 
