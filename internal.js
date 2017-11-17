@@ -3,6 +3,10 @@
 // livebox:   $('#192-168-1-1 > g > rect, #192-168-1-1 > g > path').css('fill', 'green')
 // Raspberry: $('#192-168-1-46 > path').css('fill', 'green')
 // Postes:    $('#192-168-1-27 > path').css('stroke', 'red')
+fetch('internalnet.svg').then((resp) => {
+ // console.log(resp.text())
+  resp.text().then((text) => {
+    document.querySelector('#svg').innerHTML = text
 
 var svgPaths = {
   '192.168.1.1': {
@@ -51,7 +55,6 @@ var svgPaths = {
   }
 };
 
-$(function() {
   $.each(svgPaths, function(key, value) {
     $(value.path).css(value.cssProp, 'red');
   });
@@ -74,5 +77,6 @@ $(function() {
       $('#additionalInfos').text(finishedSummary);
     }
   });
-});
 
+})
+})
