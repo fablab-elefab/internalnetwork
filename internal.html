@@ -1,15 +1,36 @@
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="internal.js"></script>
-    <title>Internal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <title>LePrototype.info - Internal Network</title>
   </head>
   <body>
-    <h1>Plan du local</h1>
-    <div id="svg">
+    <div class="container-fluid">
+      <h1>Plan du local</h1>
+      <div id="svg"></div>
+      <pre id="additionalInfos"></pre>
+      <h1>Imprimantes 3D</h1>
+      <figure class="figure">
+        <img class="img-thumbnail" style="width: 320px; height: 240px" src="/webcam/printrbot" alt="webcam printrbot" />
+        <figcaption class="figure-caption text-center">printrbot</figcaption>
+      </figure>
+      <figure class="figure">
+        <img class="img-thumbnail" style="height: 240px" src="/camera.png" />
+        <figcaption class="figure-caption text-center">logresse</figcaption>
+      </figure>
+      <figure class="figure">
+        <img class="img-thumbnail" style="height: 240px" src="/camera.png" />
+        <figcaption class="figure-caption text-center">dagoma</figcaption>
+      </figure>
+      <figure class="figure">
+        <img class="img-thumbnail" style="height: 240px" src="/camera.png" />
+        <figcaption class="figure-caption text-center">prusa</figcaption>
+      </figure>
+
     </div>
-    <pre id="additionalInfos"></pre>
-    <h1>Webcam printrbot</h1>
-    <img src="/webcam/printrbot" alt="webcam printrbot" />
   </body>
 </html>
