@@ -21,8 +21,20 @@ var svgPaths = {
     path: '#192-168-1-21',
     cssProp: 'fill'
   },
+  '192.168.1.43': {
+    path: '#192-168-1-43 path',
+    cssProp: 'fill'
+  },
+  '192.168.1.44': {
+    path: '#192-168-1-44 path',
+    cssProp: 'fill'
+  },
+  '192.168.1.45': {
+    path: '#192-168-1-45 path',
+    cssProp: 'fill'
+  },
   '192.168.1.46': {
-    path: '#192-168-1-46 > path',
+    path: '#192-168-1-46 path',
     cssProp: 'fill'
   },
   '192.168.1.47': {
